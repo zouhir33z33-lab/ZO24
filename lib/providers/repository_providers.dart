@@ -1,0 +1,26 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../services/academic_repository.dart';
+import '../services/class_repository.dart';
+import '../services/settings_repository.dart';
+import '../services/status_repository.dart';
+import '../services/student_repository.dart';
+import '../services/timetable_repository.dart';
+import '../services/attendance_repository.dart';
+import '../services/evaluation_repository.dart';
+import '../services/sheet_repository.dart';
+import '../services/reset_service.dart';
+import '../services/backup_service.dart';
+import '../services/stats_repository.dart';
+
+final settingsRepositoryProvider = Provider((ref) => SettingsRepository());
+final academicRepositoryProvider = Provider((ref) => AcademicRepository());
+final classRepositoryProvider = Provider((ref) => ClassRepository());
+final studentRepositoryProvider = Provider((ref) => StudentRepository());
+final statusRepositoryProvider = Provider((ref) => StatusRepository());
+final timetableRepositoryProvider = Provider((ref) => TimetableRepository());
+final attendanceRepositoryProvider = Provider((ref) => AttendanceRepository());
+final evaluationRepositoryProvider = Provider((ref) => EvaluationRepository());
+final sheetRepositoryProvider = Provider((ref) => SheetRepository());
+final resetServiceProvider = Provider((ref) => ResetService());
+final backupServiceProvider = Provider((ref) => BackupService());
+final statsRepositoryProvider = Provider((ref) => StatsRepository());
